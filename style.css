@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    background: #ebfffc;
+    color: #333;
+}
+
+.search button {
+    border: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 20px;
+}
+
+/* Weather Info */
+.weather {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 48px;
+}
+
+.weather h2 {
+    font-size: 32px;
+}
+
+/* Weather Details */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 30px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px;
+    }
+
+    .search input {
+        font-size: 14px;
+    }
+
+    .weather h1 {
+        font-size: 36px;
+    }
+
+    .weather h2 {
+        font-size: 24px;
+    }
+
+    .humidity, .wind {
+        font-size: 16px;
+    }
+}
